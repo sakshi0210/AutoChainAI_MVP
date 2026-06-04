@@ -76,6 +76,8 @@ pip install -r requirements.txt
 
 *The application will automatically launch in your browser at `http://localhost:8501`.*
 
+<img width="1892" height="882" alt="Image" src="https://github.com/user-attachments/assets/b6fa4a9b-32e9-4bc7-ba8d-1da19ac3f89e" />
+
 ---
 
 ## 🛡️ Demo Safety (Offline Resiliency)
