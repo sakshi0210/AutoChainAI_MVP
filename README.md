@@ -81,5 +81,5 @@ pip install -r requirements.txt
 
 ---
 
-## 🛡️ Demo Safety (Offline Resiliency)
+## Demo Safety (Offline Resiliency)
 This prototype has been designed for presentation reliability. If the FastAPI backend is not running or goes offline during a live demo, the Streamlit frontend **automatically switches to fallback mode**. It runs identical local simulation algorithms, ensuring all maps, gauge charts, and ML forecast lines render flawlessly without crashing.
