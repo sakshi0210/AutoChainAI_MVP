@@ -1,6 +1,4 @@
-# AutoChainAI_MVP
-An agentic supply chain intelligence command center that predicts supplier risks, models inventory shortages using Machine Learning, and extracts procurement checklists from meeting syncs.
-
+# AutoChain AI ⚙️
 
 ### Agentic Supply Chain Intelligence & Predictive Planning for Automotive Manufacturers
 
@@ -8,17 +6,17 @@ AutoChain AI is a proactive, AI-powered command center designed to monitor suppl
 
 ---
 
-##  The Problem
+## 🚨 The Problem
 Modern automotive manufacturing operates on highly sensitive "Just-In-Time" (JIT) supply chains. Disruptions such as **supplier failures, weather events, port congestions, geopolitical tariffs, and commodity price spikes** can halt assembly lines, costing manufacturers millions of dollars. 
 
 Traditional **ERP systems** act as passive ledgers—they report supply bottlenecks only **after** the shortage has already occurred. 
 
-##  The Solution
+## 💡 The Solution
 **AutoChain AI** sits as an active intelligence layer on top of operational data. It continuously predicts supplier failures, forecasts stock depletion rates, provides alternate sourcing trade-offs, and digests unstructured planning data into immediate procurement checklists.
 
 ---
 
-## Core Features
+## ✨ Core Features
 
 1. **Executive Operations Command**:
    - Dynamic global sourcing map displaying regional risk concentrations.
@@ -39,7 +37,7 @@ Traditional **ERP systems** act as passive ledgers—they report supply bottlene
 
 ---
 
-##  Tech Stack & Architecture
+## 🛠️ Tech Stack & Architecture
 
 - **Frontend Dashboard**: Streamlit, Plotly, Custom HTML/CSS (Glassmorphism design, Montserrat/Inter typography).
 - **Backend API**: Python, FastAPI, Uvicorn.
@@ -48,7 +46,7 @@ Traditional **ERP systems** act as passive ledgers—they report supply bottlene
 
 ---
 
-##  Getting Started
+## 🚀 Getting Started
 
 Follow these steps to run the working prototype locally on Windows:
 
@@ -80,5 +78,5 @@ pip install -r requirements.txt
 
 ---
 
-##  Demo Safety (Offline Resiliency)
+## 🛡️ Demo Safety (Offline Resiliency)
 This prototype has been designed for presentation reliability. If the FastAPI backend is not running or goes offline during a live demo, the Streamlit frontend **automatically switches to fallback mode**. It runs identical local simulation algorithms, ensuring all maps, gauge charts, and ML forecast lines render flawlessly without crashing.
