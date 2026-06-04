@@ -1,22 +1,22 @@
-# AutoChain AI ⚙️
+# AutoChain AI 
 
 ### Agentic Supply Chain Intelligence & Predictive Planning for Automotive Manufacturers
 
 AutoChain AI is a proactive, AI-powered command center designed to monitor supplier operational risks, forecast inventory levels and stockout windows using Machine Learning, compare nearshore supplier alternatives, and extract structured action items from team meeting transcript syncs.
 
----
 
-## 🚨 The Problem
+
+## The Problem
 Modern automotive manufacturing operates on highly sensitive "Just-In-Time" (JIT) supply chains. Disruptions such as **supplier failures, weather events, port congestions, geopolitical tariffs, and commodity price spikes** can halt assembly lines, costing manufacturers millions of dollars. 
 
 Traditional **ERP systems** act as passive ledgers—they report supply bottlenecks only **after** the shortage has already occurred. 
 
-## 💡 The Solution
+## The Solution
 **AutoChain AI** sits as an active intelligence layer on top of operational data. It continuously predicts supplier failures, forecasts stock depletion rates, provides alternate sourcing trade-offs, and digests unstructured planning data into immediate procurement checklists.
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 1. **Executive Operations Command**:
    - Dynamic global sourcing map displaying regional risk concentrations.
@@ -37,7 +37,7 @@ Traditional **ERP systems** act as passive ledgers—they report supply bottlene
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+## Tech Stack & Architecture
 
 - **Frontend Dashboard**: Streamlit, Plotly, Custom HTML/CSS (Glassmorphism design, Montserrat/Inter typography).
 - **Backend API**: Python, FastAPI, Uvicorn.
@@ -46,7 +46,7 @@ Traditional **ERP systems** act as passive ledgers—they report supply bottlene
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to run the working prototype locally on Windows:
 
@@ -76,7 +76,8 @@ pip install -r requirements.txt
 
 *The application will automatically launch in your browser at `http://localhost:8501`.*
 
-<img width="1892" height="882" alt="Image" src="https://github.com/user-attachments/assets/b6fa4a9b-32e9-4bc7-ba8d-1da19ac3f89e" />
+<img width="1915" height="965" alt="image" src="https://github.com/user-attachments/assets/5272919d-bd18-49f4-8a21-203141bf3c57" />
+
 
 ---
 
