@@ -1,7 +1,7 @@
 # AutoChain AI 
+**[Live Interactive Prototype Dashboard](https://autochainaimvp-7tmyeanzvxmxpzp3pg3uew.streamlit.app/)**
 
 ### Agentic Supply Chain Intelligence & Predictive Planning for Automotive Manufacturers
-
 AutoChain AI is a proactive, AI-powered command center designed to monitor supplier operational risks, forecast inventory levels and stockout windows using Machine Learning, compare nearshore supplier alternatives, and extract structured action items from team meeting transcript syncs.
 
 
@@ -77,7 +77,6 @@ pip install -r requirements.txt
 *The application will automatically launch in your browser at `http://localhost:8501`.*
 
 <img width="1915" height="965" alt="image" src="https://github.com/user-attachments/assets/5272919d-bd18-49f4-8a21-203141bf3c57" />
-
 
 ---
 
