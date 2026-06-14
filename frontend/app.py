@@ -23,15 +23,20 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
     
-    /* Font overrides */
+    /* Font overrides and global text color for dark background */
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
+        color: #f8fafc !important;
     }
-    h1, h2, h3 {
+    h1, h2, h3, h4, h5, h6 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700 !important;
+        color: #ffffff !important;
     }
-    
+    .stCheckbox label p, .stMarkdown p {
+        color: #e2e8f0 !important;
+    }
+
     /* Main background */
     .stApp {
         background: linear-gradient(135deg, #0b0f19 0%, #111827 50%, #1e1b4b 100%);
