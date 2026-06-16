@@ -275,7 +275,6 @@ st.sidebar.markdown(
     """
     <div style="text-align: center; padding-top: 10px; margin-bottom: 25px;">
         <h1 style="color: #06b6d4; margin: 0; font-size: 2.2rem; text-shadow: 0 0 15px rgba(6, 182, 212, 0.4);">AutoChain AI</h1>
-        <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 5px;">Agentic Supply Chain Intelligence</p>
     </div>
     """,
     unsafe_allow_html=True
@@ -789,16 +788,20 @@ elif tab_selection == "📝 Meeting Action Extractor":
             st.markdown('<div class="glass-card-marker"></div>', unsafe_allow_html=True)
             st.markdown('<h4>🗣️ Meeting Transcript Input</h4>', unsafe_allow_html=True)
             
-            # Sample transcript for fast demo
-            default_transcript = """AutoChain Procurement Sync - 4 June 2026
+            # Dynamic sample transcript for fast demo (adjusts to current date)
+            today_str = datetime.now().strftime("%d %B %Y")
+            action_date_1 = (datetime.now() + timedelta(days=5)).strftime("%d %B")
+            action_date_2 = (datetime.now() + timedelta(days=14)).strftime("%d %B")
+            
+            default_transcript = f"""AutoChain Procurement Sync - {today_str}
 
 John (Operations): The logistics backlog at Shenzhen port is extending. Deliveries from Shenzhen Tech Ltd are taking 12 days longer than normal, causing severe warehouse stockout risks for Lithium-Ion battery cell. We need an alternative ASAP.
 
-Sarah (Procurement): I have initialized talks with MexiVolt Logistics in Mexico. Sourcing from Mexico cuts transportation transit lead time to 4 days, but would incur a 6.5% tool and die setup cost differential. We need to reach out to them to verify unit pricing. Sarah will contact them by 15 June.
+Sarah (Procurement): I have initialized talks with MexiVolt Logistics in Mexico. Sourcing from Mexico cuts transportation transit lead time to 4 days, but would incur a 6.5% tool and die setup cost differential. We need to reach out to them to verify unit pricing. Sarah will contact them by {action_date_1}.
 
-Mike (Inventory): If Shenzhen delays continue, we will breach our safety stock of 400 battery packs in 14 days. I strongly recommend Mike increases the safety targets to 1800 units for June to create a buffer. We need to get warehouse clearance for this capacity by next Friday.
+Mike (Inventory): If Shenzhen delays continue, we will breach our safety stock of 400 battery packs in 14 days. I strongly recommend Mike increases the safety targets to 1800 units for this month to create a buffer. We need to get warehouse clearance for this capacity by next Friday.
 
-Dave (Logistics): We should also check Rail logistics corridors. Dave will draft cargo routes from Boreal Resources in Canada by 30 June as a secondary buffer.
+Dave (Logistics): We should also check Rail logistics corridors. Dave will draft cargo routes from Boreal Resources in Canada by {action_date_2} as a secondary buffer.
 """
             
             transcript_text = st.text_area("Paste procurement meeting logs here:", default_transcript, height=300)
