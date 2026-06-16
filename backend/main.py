@@ -463,16 +463,16 @@ def analyze_meeting(data: MeetingRequest):
             response = model.generate_content(prompt)
             response_text = response.text.strip()
             
-            # Extract JSON from markdown blocks if Gemini accidentally wraps it
-            if response_text.startswith("```"):
-                # strip markdown blocks
-                response_text = re.sub(r"^```(?:json)?\n", "", response_text)
-                response_text = re.sub(r"\n```$", "", response_text)
+            # More robust JSON extraction using regex
+            match = re.search(r'\{.*\}', response_text, re.DOTALL)
+            if match:
+                response_text = match.group(0)
                 
             meeting_analysis = json.loads(response_text)
             return meeting_analysis
             
         except Exception as e:
+            print(f"Gemini API Error or Parsing Failed: {e}")
             # Fall back to heuristic parser on Gemini error
             pass
             
