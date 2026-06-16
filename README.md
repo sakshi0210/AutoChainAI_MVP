@@ -1,7 +1,7 @@
 # AutoChain AI 
 **[Live Interactive Prototype Dashboard](https://autochainaimvp-7tmyeanzvxmxpzp3pg3uew.streamlit.app/)**
 
-### Agentic Supply Chain Intelligence & Predictive Planning for Automotive Manufacturers
+### Supply Chain Intelligence & Predictive Planning for Automotive Manufacturers
 AutoChain AI is a proactive, AI-powered command center designed to monitor supplier operational risks, forecast inventory levels and stockout windows using Machine Learning, compare nearshore supplier alternatives, and extract structured action items from team meeting transcript syncs.
 
 
